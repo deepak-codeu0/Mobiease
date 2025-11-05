@@ -1,16 +1,15 @@
-// Simple dataset (expand with more entries)
 const phones = [
   {
-    id: 'p1', name: 'Aurora X5', os: 'android', price: 24999, camera: 108, battery: 5000, img: 'aurorax5.png', desc: 'Flagship-style camera and long battery.'
+    id: 'p1', name: 'Aurora X5', os: 'android', price: 24999, camera: 108, battery: 5000, img: 'assets/aurorax5.png ', desc: 'Flagship-style camera and long battery.'
   },
   {
-    id: 'p2', name: 'ZenPhone Lite', os: 'android', price: 14999, camera: 64, battery: 4500, img: 'zenphonelite.png', desc: 'Great value for everyday users.'
+    id: 'p2', name: 'ZenPhone Lite', os: 'android', price: 14999, camera: 64, battery: 4500, img: 'assets/zenphonelite.png', desc: 'Great value for everyday users.'
   },
   {
-    id: 'p3', name: 'iQuasar Mini', os: 'ios', price: 69999, camera: 48, battery: 3200, img: 'iquasarmini.png', desc: 'Compact iOS device with premium feel.'
+    id: 'p3', name: 'iQuasar Mini', os: 'ios', price: 69999, camera: 48, battery: 3200, img: 'assets/iquasarmini.png', desc: 'Compact iOS device with premium feel.'
   },
   {
-    id: 'p4', name: 'MegaBattery Pro', os: 'android', price: 27999, camera: 50, battery: 7000, img: 'megabatterypro.svg', desc: 'Designed for heavy users and travelers.'
+    id: 'p4', name: 'MegaBattery Pro', os: 'android', price: 27999, camera: 50, battery: 7000, img: 'assets/megabatterypro.png', desc: 'Designed for heavy users and travelers.'
   }
 ];
 
@@ -116,3 +115,4 @@ function savePhone(id){
 }
 
 // initial render
+renderRecommendations(phones);

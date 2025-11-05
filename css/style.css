@@ -8,8 +8,8 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helve
 .container{max-width:1100px;margin:0 auto;padding:16px}
 .topbar{background:linear-gradient(90deg,#fff,#f3f6ff);padding:12px 0;border-bottom:1px solid #e6e9f2}
 .topbar .container{display:flex;align-items:center;gap:12px}
-.logo{width:60px;height:60px}
-.title{font-size:1.1rem;margin:0;color:var(--accent)}
+.logo{width:90px;height:90px}
+.title{font-size:1.7rem;margin:0;color:var(--accent)}
 .main-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px}
 .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:var(--shadow)}
 .filters label{display:block;margin:10px 0;font-size:0.95rem}
