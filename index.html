@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mobiease</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <img src="assets/Main_logo.png"  alt="Logo" class="logo">
+      <h1 class="title">Mobile Recommender</h1>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="filters card">
+      <h2>Find your phone</h2>
+
+      <label>Budget (₹)
+        <input id="budget" type="range" min="5000" max="150000" step="1000" value="30000">
+      </label>
+      <div class="range-value">Up to: <span id="budget-val">₹30,000</span></div>
+
+      <label>Select OS
+        <select id="os">
+          <option value="any">Any</option>
+          <option value="android">Android</option>
+          <option value="ios">iOS</option>
+        </select>
+      </label>
+
+      <label>Camera importance
+        <select id="camera-importance">
+          <option value="0">Don't care</option>
+          <option value="1">Nice to have</option>
+          <option value="2" selected>Important</option>
+        </select>
+      </label>
+
+      <label>Battery importance
+        <select id="battery-importance">
+          <option value="0">Don't care</option>
+          <option value="1">Nice to have</option>
+          <option value="2" selected>Important</option>
+        </select>
+      </label>
+      
+      <button id="apply" class="btn">Apply filters</button>
+      <button id="reset" class="btn ghost">Reset</button>
+    </section>
+
+    <section class="results card">
+      <h2>Recommendations</h2>
+      <div id="results-list" class="results-list">
+        <!-- JS will render recommended cards here -->
+      </div>
+    </section>
+  </main>
+
+  <template id="phone-card-tpl">
+    <article class="phone-card">
+      <div class="phone-media">
+        <img class="phone-img" src="" alt="phone image">
+      </div>
+      <div class="phone-body">
+        <h3 class="phone-name"></h3>
+        <p class="phone-desc"></p>
+        <ul class="phone-specs">
+          <li>OS: <span class="spec-os"></span></li>
+          <li>Price: <strong class="spec-price"></strong></li>
+          <li>Camera: <span class="spec-camera"></span></li>
+          <li>Battery: <span class="spec-battery"></span> mAh</li>
+        </ul>
+        <div class="phone-actions">
+          <button class="btn small buy">View</button>
+          <button class="btn small save">Save</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
